@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+    <head>
+        <link rel = "stylesheet" href="styles.css">
+        <meta charset = "UTF-8">
+        <title>Responive Design</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <!--Header-->
+            <header class="flex-content">
+                <div class="flex-item"></div>
+                <div class="flex-item" id="centered">
+                    <h1>Calendar</h1>
+                </div>
+
+                <div class="flex-item" id="hright">
+                    <img src="images/calendar.jpg" width="100px" height="90%"  alt="Calendar">
+                </div>
+            </header>
+        
+            <!--Main Content-->
+            <main>
+                <!--Home-->
+                <section id="home" >
+                    <h2 id="centered">Home</h2>
+                    <p id="centered">
+                        Welcome to the Calendar App. The calendar app allows you to create a perfect to do list <br>
+                        consisting of homework, events, foods eaten, and purchases you've made each day of the week!<br>
+                        Click the buttons in the menu to get started!
+                    </p>
+
+                </section>
+
+                <!--Monday-->
+                <section id="mo" class="hidden">
+                    <div class="title">
+                        <h2>Monday</h2>
+                    </div>
+                    <div class="day-container">
+                        <div class="video" id="centered">
+                            <img src="images/monday.png" width="60%" height="90%"  alt="Monday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Tuesday-->
+                <section id="tu" class="hidden">
+                    <div class="title">
+                        <h2>Tuesday</h2>
+                    </div>
+                    <div class="day-container">
+                        <div class="video" id="centered">
+                            <img src="images/tuesday.jpg" width="60%" height="90%"  alt="Tuesday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Wednesday-->
+                <section id="we" class="hidden">
+                    <div class="title">
+                        <h2>Wednesday</h2>
+                    </div>
+                    <div class="day-container">
+                        <div class="video" id="centered">
+                            <img src="images/wednesday.jpg" width="60%" height="90%"  alt="Wednesday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Thursday-->
+                <section id="th" class="hidden">
+                    <div class="title">
+                        <h2>Thursday</h2>
+                    </div>
+                    <div class="day-container">
+                        <div class="video" id="centered">
+                            <img src="images/thursday.jpg" width="60%" height="90%"  alt="Thursday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Friday-->
+                <section id="fr" class="hidden">
+                    <div class="title">
+                        <h2>Friday</h2>
+                    </div>
+                    <div class="day-container" id="centered">
+                        <div class="video">
+                            <img src="images/friday.jpg" width="60%" height="90%"  alt="Friday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Saturday-->
+                <section id="sa" class="hidden">
+                    <div class="title">
+                        <h2>Saturday</h2>
+                    </div>
+                    <div class="day-container" id="centered">
+                        <div class="video">
+                            <img src="images/saturday.jpg" width="60%" height="90%"  alt="Saturday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Sunday-->
+                <section id="su" class="hidden">
+                    <div class="title">
+                        <h2>Sunday</h2>
+                    </div>
+                    <div class="day-container" id="centered">
+                        <div class="video">
+                            <img src="images/sunday.jpg" width="60%" height="90%"  alt="Sunday">
+                        </div>
+                        <div class="hw">
+                            <label for="message">Homework List:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="events">
+                            <label for="message">Events:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="purchases">
+                            <label for="message">Purchases:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                        <div class="food">
+                            <label for="message">Foods Eaten:</label>
+                            <textarea id="message" name="message" ></textarea>
+                            <button class="submit" onclick="saveEntry()">Submit</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Contact-->
+                <section id="about" class="hidden">
+                    <div class="title" id="centered">
+                        <h2>About</h2>
+                    </div>
+
+                    <div class="flex-content" id="centered">
+                        <div class="flex-item">
+                            <h3>Eder Sandoval</h3>
+                            <p>
+                                Eder Sandoval is a Software Engineering major at Utah Valley University.<br>
+                                He is currently a sophomore enrolled in a Web Development class. 
+                            </p>
+                            <img style="text-align:center;" src="images/edersandoval.jpg" width="60%" height="60%"  alt="Eder Sandoval">
+
+                            
+                        </div>
+
+                        <div style="margin:10px;" class="flex-item" id="centered">
+                            <h3>Utah Valley University</h3>
+                            <p>
+                                Utah Valley University is a public university in Orem, Utah.<br>
+                                 UVU offers master's, bachelor's, associate degrees, and certificates.
+                            </p>
+                            <iframe margin-right:10px width="100%" height="60%" src="https://www.youtube.com/embed/mo_Mecxsm6I" frameborder="0"></iframe>
+
+
+
+                        </div>
+        
+                    </div>
+                    
+                </section>
+            </main>
+
+            <!--Menu-->
+            <aside>
+                <nav> <h2 id="centered">Menu</h2>
+                    <div  class="button-content">
+                        <button class='menuBtn selected' onclick="" name="home">Home</button><br>
+                        <button class='menuBtn' name="about">About</button><br>
+                        <button class='menuBtn' name="mo">Monday</button><br>
+                        <button class='menuBtn' name="tu">Tuesday</button><br>
+                        <button class='menuBtn' name="we">Wednesday</button><br>
+
+                    </div>
+                    <div  class="button-content">
+                        <button class='menuBtn' name="th">Thursday</button><br>
+                        <button class='menuBtn' name="fr">Friday</button><br>
+                        <button class='menuBtn' name="sa">Saturday</button><br>
+                        <button class='menuBtn' name="su">Sunday</button><br>
+                    </div>
+                </nav>
+            </aside>
+
+            <!--Footer-->
+            <footer class="flex-content">
+                <div class="flex-item" id="centered">
+                    <h6>10991488@uvu.edu</h6>
+                </div>
+                <div class="flex-item" id="centered">
+                    <h6>Eder Sandoval</h6>
+                </div>
+                <div class="flex-item" id="centered">
+                    <h6>UVU Spring 2024</h6>
+                </div>
+            </footer>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
