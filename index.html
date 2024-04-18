@@ -2,7 +2,7 @@
 <html lang= "en">
 
     <head>
-        <link rel = "stylesheet" href="styles.css">
+        <link rel = "stylesheet" href="css/theme.css">
         <meta charset = "UTF-8">
         <title>Responive Design</title>
     </head>
@@ -11,9 +11,11 @@
         <div id="container">
             <!--Header-->
             <header class="flex-content">
-                <div class="flex-item"></div>
+                <div class="flex-item">
+                    <button name="toggle" id="toggle" value="on"></button>
+                </div>
                 <div class="flex-item" id="centered">
-                    <h1>Calendar</h1>
+                    <h1 class="outlined-text">Calendar</h1>
                 </div>
 
                 <div class="flex-item" id="hright">
@@ -25,8 +27,8 @@
             <main>
                 <!--Home-->
                 <section id="home" >
-                    <h2 id="centered">Home</h2>
-                    <p id="centered">
+                    <h2 id="centered" class="outlined-text">Home</h2>
+                    <p class="outlined-text" id="centered">
                         Welcome to the Calendar App. The calendar app allows you to create a perfect to do list <br>
                         consisting of homework, events, foods eaten, and purchases you've made each day of the week!<br>
                         Click the buttons in the menu to get started!
@@ -40,28 +42,28 @@
                         <h2>Monday</h2>
                     </div>
                     <div class="day-container">
-                        <div class="video" id="centered">
+                        <div class="video hideDay" id="centered">
                             <img src="images/monday.png" width="60%" height="90%"  alt="Monday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="monWork">Homework List:</label>
+                            <textarea class="message" id="monWork" name="monW" ></textarea>
+                            <button class="submit" onclick="saveEntry('monWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="monEvents">Events:</label>
+                            <textarea class="message" id="monEvents" name="monE" ></textarea>
+                            <button class="submit" onclick="saveEntry('monEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="monPurchases">Purchases:</label>
+                            <textarea class="message" id="monPurchases" name="monP" ></textarea>
+                            <button class="submit" onclick="saveEntry('monPurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="monFoods">Foods Eaten:</label>
+                            <textarea class="message" id="monFoods" name="monF" ></textarea>
+                            <button class="submit" onclick="saveEntry('monFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -71,28 +73,28 @@
                         <h2>Tuesday</h2>
                     </div>
                     <div class="day-container">
-                        <div class="video" id="centered">
+                        <div class="video hideDay" id="centered">
                             <img src="images/tuesday.jpg" width="60%" height="90%"  alt="Tuesday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="tueWork">Homework List:</label>
+                            <textarea class="message" id="tueWork" name="tueH" ></textarea>
+                            <button class="submit" onclick="saveEntry('tueWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="tueEvents">Events:</label>
+                            <textarea class="message" id="tueEvents" name="tueE" ></textarea>
+                            <button class="submit" onclick="saveEntry('tueEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="tuePurchases">Purchases:</label>
+                            <textarea class="message" id="tuePurchases" name="tueP" ></textarea>
+                            <button class="submit" onclick="saveEntry('tuePurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="tueFoods">Foods Eaten:</label>
+                            <textarea class="message" id="tueFoods" name="tueF" ></textarea>
+                            <button class="submit" onclick="saveEntry('tueFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -102,28 +104,28 @@
                         <h2>Wednesday</h2>
                     </div>
                     <div class="day-container">
-                        <div class="video" id="centered">
+                        <div class="video hideDay" id="centered">
                             <img src="images/wednesday.jpg" width="60%" height="90%"  alt="Wednesday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="wedWork">Homework List:</label>
+                            <textarea class="message" id="wedWork" name="wedH" ></textarea>
+                            <button class="submit" onclick="saveEntry('wedWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="wedEvents">Events:</label>
+                            <textarea class="message" id="wedEvents" name="wedE" ></textarea>
+                            <button class="submit" onclick="saveEntry('wedEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="wedPurchases">Purchases:</label>
+                            <textarea class="message" id="wedPurchases" name="wedP" ></textarea>
+                            <button class="submit" onclick="saveEntry('wedPurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="wedFoods">Foods Eaten:</label>
+                            <textarea class="message" id="wedFoods" name="wedF" ></textarea>
+                            <button class="submit" onclick="saveEntry('wedFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -133,28 +135,28 @@
                         <h2>Thursday</h2>
                     </div>
                     <div class="day-container">
-                        <div class="video" id="centered">
+                        <div class="video hideDay" id="centered">
                             <img src="images/thursday.jpg" width="60%" height="90%"  alt="Thursday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="thuWork">Homework List:</label>
+                            <textarea class="message" id="thuWork" name="thuH" ></textarea>
+                            <button class="submit" onclick="saveEntry('thuWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="thuEvents">Events:</label>
+                            <textarea class="message" id="thuEvents" name="thuE" ></textarea>
+                            <button class="submit" onclick="saveEntry('thuEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="thuPurchases">Purchases:</label>
+                            <textarea class="message" id="thuPurchases" name="thuP" ></textarea>
+                            <button class="submit" onclick="saveEntry('thuPurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="thuFoods">Foods Eaten:</label>
+                            <textarea class="message" id="thuFoods" name="thuF" ></textarea>
+                            <button class="submit" onclick="saveEntry('thuFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -163,29 +165,29 @@
                     <div class="title">
                         <h2>Friday</h2>
                     </div>
-                    <div class="day-container" id="centered">
-                        <div class="video">
+                    <div class="day-container">
+                        <div class="video hideDay">
                             <img src="images/friday.jpg" width="60%" height="90%"  alt="Friday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="friWork">Homework List:</label>
+                            <textarea class="message" id="friWork" name="friH" ></textarea>
+                            <button class="submit" onclick="saveEntry('friWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="friEvents">Events:</label>
+                            <textarea class="message" id="friEvents" name="friE" ></textarea>
+                            <button class="submit" onclick="saveEntry('friEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="friPurchases">Purchases:</label>
+                            <textarea class="message" id="friPurchases" name="friP" ></textarea>
+                            <button class="submit" onclick="saveEntry('friPurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="friFoods">Foods Eaten:</label>
+                            <textarea class="message" id="friFoods" name="friF" ></textarea>
+                            <button class="submit" onclick="saveEntry('friFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -194,29 +196,29 @@
                     <div class="title">
                         <h2>Saturday</h2>
                     </div>
-                    <div class="day-container" id="centered">
-                        <div class="video">
+                    <div class="day-container">
+                        <div class="video hideDay">
                             <img src="images/saturday.jpg" width="60%" height="90%"  alt="Saturday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="satWork">Homework List:</label>
+                            <textarea class="message" id="satWork" name="satH" ></textarea>
+                            <button class="submit" onclick="saveEntry('satWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="satEvents">Events:</label>
+                            <textarea class="message" id="satEvents" name="satE" ></textarea>
+                            <button class="submit" onclick="saveEntry('satEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="satPurchases">Purchases:</label>
+                            <textarea class="message" id="satPurchases" name="satP" ></textarea>
+                            <button class="submit" onclick="saveEntry('satPurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="satFoods">Foods Eaten:</label>
+                            <textarea class="message" id="satFoods" name="satF" ></textarea>
+                            <button class="submit" onclick="saveEntry('satFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -225,29 +227,29 @@
                     <div class="title">
                         <h2>Sunday</h2>
                     </div>
-                    <div class="day-container" id="centered">
-                        <div class="video">
+                    <div class="day-container">
+                        <div class="video hideDay">
                             <img src="images/sunday.jpg" width="60%" height="90%"  alt="Sunday">
                         </div>
                         <div class="hw">
-                            <label for="message">Homework List:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="sunWork">Homework List:</label>
+                            <textarea class="message" id="sunWork" name="sunH" ></textarea>
+                            <button class="submit" onclick="saveEntry('sunWork')">Submit</button>
                         </div>
                         <div class="events">
-                            <label for="message">Events:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="sunEvents">Events:</label>
+                            <textarea class="message" id="sunEvents" name="sunE" ></textarea>
+                            <button class="submit" onclick="saveEntry('sunEvents')">Submit</button>
                         </div>
                         <div class="purchases">
-                            <label for="message">Purchases:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="sunPurchases">Purchases:</label>
+                            <textarea class="message" id="sunPurchases" name="sunP" ></textarea>
+                            <button class="submit" onclick="saveEntry('sunPurchases')">Submit</button>
                         </div>
                         <div class="food">
-                            <label for="message">Foods Eaten:</label>
-                            <textarea id="message" name="message" ></textarea>
-                            <button class="submit" onclick="saveEntry()">Submit</button>
+                            <label for="sunFoods">Foods Eaten:</label>
+                            <textarea class="message" id="sunFoods" name="sunF"></textarea>
+                            <button class="submit" onclick="saveEntry('sunFoods')">Submit</button>
                         </div>
                     </div>
                 </section>
@@ -261,7 +263,7 @@
                     <div class="flex-content" id="centered">
                         <div class="flex-item">
                             <h3>Eder Sandoval</h3>
-                            <p>
+                            <p class="outlined-text">
                                 Eder Sandoval is a Software Engineering major at Utah Valley University.<br>
                                 He is currently a sophomore enrolled in a Web Development class. 
                             </p>
@@ -272,7 +274,7 @@
 
                         <div style="margin:10px;" class="flex-item" id="centered">
                             <h3>Utah Valley University</h3>
-                            <p>
+                            <p class="outlined-text">
                                 Utah Valley University is a public university in Orem, Utah.<br>
                                  UVU offers master's, bachelor's, associate degrees, and certificates.
                             </p>
