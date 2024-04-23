@@ -4,6 +4,7 @@
     <head>
         <link rel = "stylesheet" href="css/theme.css">
         <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Responive Design</title>
     </head>
 
@@ -256,7 +257,7 @@
 
                 <!--Contact-->
                 <section id="about" class="hidden">
-                    <div class="title" id="centered">
+                    <div class="title">
                         <h2>About</h2>
                     </div>
 
@@ -287,20 +288,126 @@
                     </div>
                     
                 </section>
+                <!-- Log Visit -->
+                <section id="visit" class="hidden"> 
+                    <div class="title">
+                        <h2>Visitor Form</h2>
+                    </div>
+
+                    <div id="success" class="hidden outlined-text">
+                        <h3 id="centered">Thank you for logging your visit!</h3>
+                    </div>
+
+                    <form id="my-form" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php" class="wrapper">
+                        <!-- 1st column -->
+                        <div class="form">
+                            <!-- First Name -->
+                            <div class="form-item">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
+                                <div class="errorMsg" id="firstName-error"></div>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="form-item">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
+                                <div class="errorMsg" id="lastName-error"></div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="form-item">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Enter Address">
+                                <div class="errorMsg" id="address-error"></div>
+                            </div>
+                        
+
+                            <!-- City -->
+                            <div class="form-item">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Enter City">
+                                <div class="errorMsg" id="city-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- 2nd Column -->
+                        <div class="form">
+                            <!-- State -->
+                            <div class="form-item">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="Enter State">
+                                <div class="errorMsg" id="state-error"></div>
+                            </div>
+
+                            <!-- Zip -->
+                            <div class="form-item">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="Enter Zip">
+                                <div class="errorMsg" id="zip-error"></div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-item">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Enter Email">
+                                <div class="errorMsg" id="email-error"></div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="form-item">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" name="phone" placeholder="Enter Phone Number">
+                                <div class="errorMsg" id="phone-error"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd column -->
+                        <div class="form">  
+                            <!-- Hear about us -->
+                            <div class="form-item">
+                                <h3>How did you hear about us?</h3>
+
+                                <input type="checkbox" name ="hear" id="social-media" value="Social Media">
+                                <label for="social-media">Social Media</label><br>
+
+                                <input type="checkbox" name ="hear" id="friend" value="Social Media">
+                                <label for="social-media">Friend</label><br>
+
+                                <input type="checkbox" name ="hear" id="advertisement" value="Social Media">
+                                <label for="social-media">Advertisement</label><br>
+
+                                <input type="checkbox" name ="hear" id="social-media" value="Social Media">
+                                <label for="social-media">Social Media</label><br>
+
+                                <input type="checkbox" name ="hear" id="other" value="other">
+                                <label for="other">Other</label><br>
+
+                                <div class="errorMsg" id="social-media-error"></div>
+                            </div>
+                            
+                            <!-- Submission Button -->
+                            <div class="form-item">
+                                <input class="submit" type="submit" id="submission" name="submission">
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+
             </main>
 
             <!--Menu-->
             <aside>
                 <nav> <h2 id="centered">Menu</h2>
                     <div  class="button-content">
-                        <button class='menuBtn selected' onclick="" name="home">Home</button><br>
+                        <button class='menuBtn selected' name="home">Home</button><br>
                         <button class='menuBtn' name="about">About</button><br>
+                        <button class='menuBtn' name="visit">Log Visit</button><br>
                         <button class='menuBtn' name="mo">Monday</button><br>
                         <button class='menuBtn' name="tu">Tuesday</button><br>
-                        <button class='menuBtn' name="we">Wednesday</button><br>
-
                     </div>
                     <div  class="button-content">
+                        <button class='menuBtn' name="we">Wednesday</button><br>
                         <button class='menuBtn' name="th">Thursday</button><br>
                         <button class='menuBtn' name="fr">Friday</button><br>
                         <button class='menuBtn' name="sa">Saturday</button><br>
@@ -323,6 +430,8 @@
             </footer>
 
         </div>
-        <script src="script.js"></script>
+        <script defer src="js/validation.js"></script>
+        <script defer src="js/script.js"></script>
+        <script defer src="js/page.js"></script>
     </body>
 </html>
